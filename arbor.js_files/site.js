@@ -1,8 +1,4 @@
-//
-// site.js
-//
-// the arbor.js website
-//
+
 (function($){
   // var trace = function(msg){
   //   if (typeof(window)=='undefined' || !window.console) return
@@ -368,7 +364,7 @@
              'Hareton Denied Education':{color:CLR.branch, shape: "dot", alpha:1},
              'Isabella\'s Love Revealed':{color:CLR.branch, shape: "dot", alpha:1},
              'Catherine Stops Servent Attack':{color:CLR.branch, shape: "dot", alpha:1},
-             'Isabella Runs With Heathcliff':{color:CLR.branch, shape: "dot", alpha:1},
+             'Isabella Runs With Heathcliff':{color:"red", shape: "dot", alpha:1},
              reference:{color:CLR.doc, alpha:0},
              
              github:{color:CLR.code, alpha:0},
@@ -381,14 +377,23 @@
              'Heathcliff Wouldn\'t Have Run Away':{color:CLR.code, alpha:0},
              'Heathcliff Would Be Poor':{color:CLR.code, alpha:0},
              'Hindley Wouldn\'t Allow Him Back':{color:CLR.code, alpha:0},
-             //:{color:CLR.code, alpha:0,
+             
+             'Less Evil and Tension at the Estates':{color:CLR.code, alpha:0},
+             
+            
+             'Heathcliff Would Have Less Control':{color:CLR.code, alpha:0},
+             
+             
+             'Cathy Wouldn\'t Make Fun of Him':{color:CLR.code, alpha:0},
+             'Heathcliff Might Not Have Found Out':{color:CLR.code, alpha:0},
+             'Heathcliff Wouldn\'t Have Used Isabella':{color:CLR.code, alpha:0},
+             
+             'Heathcliff Dies':{color:CLR.code, alpha:0},
+             'Catherine Suicides':{color:CLR.code, alpha:0},
+             'Cathy Wouldn\t Make Fun of Him':{color:CLR.code, alpha:0},
              //:{color:CLR.code, alpha:0},
              //:{color:CLR.code, alpha:0},
-             //:{color:CLR.code, alpha:0},
-             //:{color:CLR.code, alpha:0},
-             //:{color:CLR.code, alpha:0},
-             //:{color:CLR.code, alpha:0},
-             //:{color:CLR.code, alpha:0},
+             
              ".zip":{color:CLR.code, alpha:0},
              ".tar.gz":{color:CLR.code, alpha:0}
             },
@@ -397,7 +402,8 @@
           'Heathcliff Comes':{length:.8}
         },
         'Heathcliff Comes':{
-              'Hindley is mean to Heathcliff.':{length: 2}
+              'Hindley is mean to Heathcliff.':{length: 2},
+              'Less Evil and Tension at the Estates':{}
               
               
         },
@@ -411,7 +417,8 @@
           'Catherine Wouldn\'t Marry Edgar':{}
         },
         'Catherine with Lintons':{
-          'Frances Dies; Hindley Drinks':{}
+          'Frances Dies; Hindley Drinks':{},
+          'Catherine Wouldn\'t Marry Edgar':{}
         },
         'Frances Dies; Hindley Drinks':{
           'Heathcliff Cathces Hareton':{},
@@ -437,19 +444,29 @@
           'Hindley Wouldn\'t Allow Him Back':{}
         },
         'Heathcliff Returns':{
-          'Hindley Loses Property':{}
+          'Hindley Loses Property':{},
+          'Less Evil and Tension at the Estates':{}
         },
         'Hindley Loses Property':{
-          'Hareton Denied Education':{}
+          'Hareton Denied Education':{},
+          'Heathcliff Would Have Less Control':{}
         },
         'Hareton Denied Education':{
-          'Isabella\'s Love Revealed':{}
+          'Isabella\'s Love Revealed':{},
+          'Cathy Wouldn\t Make Fun of Him':{}
         },
         'Isabella\'s Love Revealed':{
-          'Catherine Stops Servent Attack':{}
+          'Catherine Stops Servent Attack':{},
+          'Heathcliff Might Not Have Found Out':{},
+          'Heathcliff Wouldn\'t Have Used Isabella':{}
         },
         'Catherine Stops Servent Attack':{
-          'Isabella Runs With Heathcliff':{}
+          'Isabella Runs With Heathcliff':{},
+          'Heathcliff Dies':{},
+          'Catherine Suicides':{}
+        },
+        'Isabella Runs With Heathcliff':{
+          'Heathcliff Wouldn\'t Have Used Isabella':{}
         }
         
 

@@ -159,7 +159,7 @@
                  dom.removeClass('linkable')
                  window.status = ''
               }
-            }else if ($.inArray(nearest.node.name, ['Wuthering Heights','Heathcliff Does Not Come','docs','demos', 'Heathcliff Comes','Hindley is mean to Heathcliff.', 'Dog Bit Catherine', 'Catherine with Lintons', 'Frances Dies; Hindley Drinks','Heathcliff Cathces Hareton']) >=0 ){
+            }else if ($.inArray(nearest.node.name, ['Wuthering Heights','Heathcliff Does Not Come','docs','demos', 'Heathcliff Comes','Hindley is mean to Heathcliff.', 'Dog Bit Catherine', 'Catherine with Lintons', 'Frances Dies; Hindley Drinks','Heathcliff Cathces Hareton', 'Nelly Didn\'t See Heathcliff']) >=0 ){
               if (nearest.node.name!=_section){
                 _section = nearest.node.name
                 that.switchSection(_section)
@@ -361,6 +361,7 @@
              'Catherine with Lintons':{color:CLR.branch, shape: "dot", alpha:1},
              'Frances Dies; Hindley Drinks':{color:CLR.branch, shape: "dot", alpha:1},
              'Heathcliff Cathces Hareton':{color:CLR.branch, shape: "dot", alpha:1},
+             'Nelly Didn\'t See Heathcliff':{color:CLR.branch, shape: "dot", alpha:1},
              reference:{color:CLR.doc, alpha:0},
              introduction:{color:CLR.doc, alpha:0},
 
@@ -403,6 +404,9 @@
         },
         'Frances Dies; Hindley Drinks':{
           'Heathcliff Cathces Hareton':{}
+        },
+        'Heathcliff Cathces Hareton':{
+          'Nelly Didn\'t See Heathcliff':{}
         }
 
       }

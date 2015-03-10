@@ -159,7 +159,7 @@
                  dom.removeClass('linkable')
                  window.status = ''
               }
-            }else if ($.inArray(nearest.node.name, ['Wuthering Heights','Heathcliff Does Not Come','docs','demos', 'Heathcliff Comes','Hindley is mean to Heathcliff.', 'Dog Bit Catherine', 'Catherine with Lintons', 'Frances Dies; Hindley Drinks','Heathcliff Cathces Hareton', 'Nelly Didn\'t See Heathcliff']) >=0 ){
+            }else if ($.inArray(nearest.node.name, ['Wuthering Heights','Heathcliff Comes','Hindley is mean to Heathcliff.', 'Dog Bit Catherine', 'Catherine with Lintons', 'Frances Dies; Hindley Drinks','Heathcliff Cathces Hareton', 'Nelly Didn\'t See Heathcliff','Heathcliff Leaves', 'Heathcliff Aquires Wealth','Heathcliff Returns','Hindley Loses Property','Hareton Denied Education','Isabella\'s Love Revealed','Catherine Stops Servent Attack','Isabella Runs With Heathcliff']) >=0 ){
               if (nearest.node.name!=_section){
                 _section = nearest.node.name
                 that.switchSection(_section)
@@ -346,8 +346,7 @@
     var theUI = {
       nodes:{"Wuthering Heights":{color:"red", shape:"dot", alpha:1}, 
       
-             demos:{color:CLR.branch, shape:"dot", alpha:1}, 
-             docs:{color:CLR.branch, shape:"dot", alpha:1}, 
+             
              halfviz:{color:CLR.demo, alpha:0, link:'/halfviz'},
              atlas:{color:CLR.demo, alpha:0, link:'/atlas'},
              echolalia:{color:CLR.demo, alpha:0, link:'/echolalia'},
@@ -362,52 +361,97 @@
              'Frances Dies; Hindley Drinks':{color:CLR.branch, shape: "dot", alpha:1},
              'Heathcliff Cathces Hareton':{color:CLR.branch, shape: "dot", alpha:1},
              'Nelly Didn\'t See Heathcliff':{color:CLR.branch, shape: "dot", alpha:1},
+             'Heathcliff Leaves':{color:CLR.branch, shape: "dot", alpha:1},
+             'Heathcliff Aquires Wealth':{color:CLR.branch, shape: "dot", alpha:1},
+             'Heathcliff Returns':{color:CLR.branch, shape: "dot", alpha:1},
+             'Hindley Loses Property':{color:CLR.branch, shape: "dot", alpha:1},
+             'Hareton Denied Education':{color:CLR.branch, shape: "dot", alpha:1},
+             'Isabella\'s Love Revealed':{color:CLR.branch, shape: "dot", alpha:1},
+             'Catherine Stops Servent Attack':{color:CLR.branch, shape: "dot", alpha:1},
+             'Isabella Runs With Heathcliff':{color:CLR.branch, shape: "dot", alpha:1},
              reference:{color:CLR.doc, alpha:0},
-             introduction:{color:CLR.doc, alpha:0},
-
-             'Heathcliff Does Not Come':{color:CLR.branch, shape:"dot", alpha:1},
-             github:{color:CLR.code, alpha:0, link:'https://github.com/samizdatco/arbor'},
-             ".zip":{color:CLR.code, alpha:0, link:'/js/dist/arbor-v0.92.zip'},
-             ".tar.gz":{color:CLR.code, alpha:0, link:'/js/dist/arbor-v0.92.tar.gz'}
+             
+             github:{color:CLR.code, alpha:0},
+             "Heathcliff Wouldn't Steal Wuthering Heights":{color:CLR.code, alpha:0},
+             'Catherine Wouldn\'t Live With Lintons':{color:CLR.code, alpha:0},
+             'Catherine Wouldn\'t Marry Edgar':{color:CLR.code, alpha:0},
+             'Hindley Doesn\'t Gamble Away Wuthering Heights':{color:CLR.code, alpha:0},
+             'Hareton Dies':{color:CLR.code, alpha:0},
+             'Heathcliff Can\'t Use Hareton':{color:CLR.code, alpha:0},
+             'Heathcliff Wouldn\'t Have Run Away':{color:CLR.code, alpha:0},
+             'Heathcliff Would Be Poor':{color:CLR.code, alpha:0},
+             'Hindley Wouldn\'t Allow Him Back':{color:CLR.code, alpha:0},
+             //:{color:CLR.code, alpha:0,
+             //:{color:CLR.code, alpha:0},
+             //:{color:CLR.code, alpha:0},
+             //:{color:CLR.code, alpha:0},
+             //:{color:CLR.code, alpha:0},
+             //:{color:CLR.code, alpha:0},
+             //:{color:CLR.code, alpha:0},
+             //:{color:CLR.code, alpha:0},
+             ".zip":{color:CLR.code, alpha:0},
+             ".tar.gz":{color:CLR.code, alpha:0}
             },
       edges:{
         "Wuthering Heights":{
-          demos:{length:.8},
-          docs:{length:.8},
-          'Heathcliff Does Not Come':{length:.8},
           'Heathcliff Comes':{length:.8}
         },
-        demos:{halfviz:{},
-               atlas:{},
-               echolalia:{}
-        },
-        docs:{reference:{},
-              introduction:{}
-        },
-        'Heathcliff Does Not Come':{".zip":{},
-              ".tar.gz":{},
-              "github":{}
-        },
         'Heathcliff Comes':{
-              'Hindley is mean to Heathcliff.':{length: 2},
-              introductions:{},
+              'Hindley is mean to Heathcliff.':{length: 2}
+              
               
         },
         'Hindley is mean to Heathcliff.':{
-          'Dog Bit Catherine':{}
+          'Dog Bit Catherine':{},
+          "Heathcliff Wouldn't Steal Wuthering Heights":{}
         }, 
         'Dog Bit Catherine':{
-          'Catherine with Lintons':{}
+          'Catherine with Lintons':{},
+          'Catherine Wouldn\'t Live With Lintons':{},
+          'Catherine Wouldn\'t Marry Edgar':{}
         },
         'Catherine with Lintons':{
           'Frances Dies; Hindley Drinks':{}
         },
         'Frances Dies; Hindley Drinks':{
-          'Heathcliff Cathces Hareton':{}
+          'Heathcliff Cathces Hareton':{},
+          'Hindley Doesn\'t Gamble Away Wuthering Heights':{}
         },
         'Heathcliff Cathces Hareton':{
-          'Nelly Didn\'t See Heathcliff':{}
+          'Nelly Didn\'t See Heathcliff':{},
+          'Hareton Dies':{},
+          'Heathcliff Can\'t Use Hareton':{}
+        },
+        'Nelly Didn\'t See Heathcliff':{
+          'Heathcliff Leaves':{},
+          'Heathcliff Wouldn\'t Have Run Away':{},
+          'Heathcliff Would Be Poor':{}
+        },
+          'Heathcliff Leaves':{
+            'Heathcliff Aquires Wealth':{},
+            'Heathcliff Would Be Poor':{}
+        },
+        'Heathcliff Aquires Wealth':{
+          'Heathcliff Returns':{},
+          'Heathcliff Would Be Poor':{},
+          'Hindley Wouldn\'t Allow Him Back':{}
+        },
+        'Heathcliff Returns':{
+          'Hindley Loses Property':{}
+        },
+        'Hindley Loses Property':{
+          'Hareton Denied Education':{}
+        },
+        'Hareton Denied Education':{
+          'Isabella\'s Love Revealed':{}
+        },
+        'Isabella\'s Love Revealed':{
+          'Catherine Stops Servent Attack':{}
+        },
+        'Catherine Stops Servent Attack':{
+          'Isabella Runs With Heathcliff':{}
         }
+        
 
       }
     }
